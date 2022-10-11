@@ -9,6 +9,6 @@ resource "aws_vpc" "vpc" {
 resource "aws_subnet" "subnets" {
   vpc_id = aws_vpc.vpc.id
  # availability_zone = var.azs
-  count = length(var.subnet_block)
-  cidr_block = var.subnet_block[count.index]
+  count = length(var.subnet_block) #here to check how many subnet we created 
+  cidr_block = var.subnet_block[count.index] #if we to take the length of subnets list and create the subnet 
 }
