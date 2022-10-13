@@ -18,7 +18,7 @@ module "myvpc" {
   
 
   vpc_cidr = "10.10.0.0/16"
-   Create_subnets = true
-   subnet_blocks = [ "10.10.0.0/22" , "10.10.4.0/22" , "10.10.8.0/22" ]
+  Create_subnets = true
+  subnet_blocks = [ "10.10.0.0/22" ,"10.10.4.0/22" ]
   
 }
