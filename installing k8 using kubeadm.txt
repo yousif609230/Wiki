@@ -108,7 +108,7 @@ kubectl create -f custom-resources.yaml
 
 
 8.Add worker nodes to the cluster
-
+NOTE: if you lose the below command you can regenerate it from master node using: kubeadm token create --print-join-command
 kubeadm join 192.168.88.130:6443 --token yprcrz.5by8hced4kvv484n \
         --discovery-token-ca-cert-hash sha256:56f9f1fbce3144afcc731923d8198a897bd29e9e3524618b3fda2a887fe0cd11
 
