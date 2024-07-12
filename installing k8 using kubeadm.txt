@@ -1,7 +1,16 @@
 k8-master:  192.168.88.130
 k8-worker   192.168.88.131
 
+NOTE: when you use vmware and rebooted the server , kindly use this to make kubectl works:
+sudo -i
+swapoff -a
+exit
+strace -eopenat kubectl version
 
+
+############################################################################
+############################################################################
+############################################################################
 https://www.cherryservers.com/blog/install-kubernetes-on-ubuntu
 1. disable Swap in master and worker node
 #disable it temborary OR
