@@ -33,7 +33,12 @@ ON ADMIN MACHINE
 4. using the cluster
 export KUBECONFIG=/home/<username>/.kube/admin.conf
 
+############################################################################
+####################### Allow running Pods in Master #######################
+############################################################################
 
+kubectl taint node <master-node> node-role.kubernetes.io/control-plane:NoSchedule-
+kubectl taint node <master-node> node-role.kubernetes.io/master:NoSchedule-
 
 ############################################################################
 ####################### Install K8 MAster and Worker #######################
