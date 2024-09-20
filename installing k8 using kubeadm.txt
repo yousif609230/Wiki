@@ -10,6 +10,8 @@ swapoff -a
 exit
 strace -eopenat kubectl version
 
+systemctl restart kubelet
+
 
 #######################################################################################################
 ####################### if pods not terminating normally & want to force delete #######################
